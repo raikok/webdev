@@ -2,10 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="res/images/favicon.ico">
+    <link href="res/images/favicon.ico" rel="icon">
     <title>My Dashboard</title>
 </head>
 <body>
+
+<header>
+    <strong>Welcome to your dashboard!</strong>
+</header>
+
+<section>
+    <div>
+        <img alt="My picture" src="res/images/me.png">
+    </div>
+
+    <div>
+        <ul>
+            <li>John Doe</li>
+            <li>27/06/1993</li>
+            <li>Software Engineering</li>
+        </ul>
+    </div>
+
+    <div>
+        <strong>2.65</strong>
+    </div>
+</section>
+
+<section>
+
+    <h1>Courses</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Course Title</th>
+            <th>Semester</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="https://courses.cs.ut.ee/2020/ADS/fall" target="_blank"> Agile software development</a></td>
+            <td>Semester 1 fall</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>System modeling</td>
+            <td>Semester 1 spring</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Object-oriented programming</td>
+            <td>Semester 2 spring</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Estonian language Level A2</td>
+            <td>Semester 2 fall</td>
+            <td>65</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4">
+                <button>Add new course</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <form>
+                    <label for="title">Enter the title..</label>
+                    <input id="title" placeholder="Enter the title.." type="text" name="title">
+                    <hr>
+                    <label for="semester">Semester</label>
+                        <select id="semester">
+                            <option disabled selected>Please select</option>
+                            <option name="fall" label="Fall">Fall</option>
+                            <option name="spring" label="Spring">Spring</option>
+                        </select>
+                    <hr>
+                    <label for="grade">Grade</label>
+                    <input id="grade" placeholder="Grade" type="number" name="grade" min="0" max="100">
+                    <hr>
+                    <button type="submit">Add</button>
+                </form>
+            </td>
+        </tr>
+        </tfoot>
+        <style>
+            table, tr, td {
+                border: solid 1px black;
+                border-collapse: collapse;
+            }
+        </style>
+    </table>
+</section>
+
+<footer>
+    <ul>
+        <li>
+            <a href="https://ois2.ut.ee/">OIS</a>
+        </li>
+        <li>
+            <a href="https://courses.cs.ut.ee/">Courses</a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>
